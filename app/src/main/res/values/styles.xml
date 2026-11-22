@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ACTUAL style definition, so many files ..-->
+    <!-- 1-Translucent surfaces -->
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/gray_surface</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">@dimen/card_corners</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="rippleColor">@android:color/transparent </item>
+    </style>
+
+
+    <!-- TextField -->
+    <style name="Widget.App.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="hintEnabled">false</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxStrokeColor">@android:color/transparent</item>
+
+        <item name="boxCornerRadiusTopStart">@dimen/textfield_corners </item>
+        <item name="boxCornerRadiusTopEnd">@dimen/textfield_corners </item>
+
+        <item name="boxCornerRadiusBottomStart">@dimen/textfield_corners </item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/textfield_corners </item>
+
+        <item name="hintTextColor">@color/accentColor</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <item name="errorTextColor">@color/errorColor</item>
+        <item name="errorIconTint">@color/errorColor</item>
+
+        <item name="cursorColor">#F6E946</item>
+
+
+
+
+    </style>
+
+    <!--Buttons, big, borderless again ? -->
+    <style name="Widget.App.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Body</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">@dimen/roundedCorners</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+
+
+        <item name="android:stateListAnimator">@animator/press_scale</item>
+    </style>
+
+    <!-- SECONDARY button -->
+    <!-- OHHH Button already inherits the other button .. -->
+    <style name="Widget.App.Button.Secondary">
+        <item name="backgroundTint">@color/gray_surface</item>
+
+
+
+    </style>
+
+</resources>
+
+<!-- STILL NOT ENOUGH btw! need to put these inside Base.Theme THIS MESS -->

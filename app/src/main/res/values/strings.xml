@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CanaryRock</string>
+
+    <!-- Sign up -->
+
+    <string name="sign_up_text">Welcome to Canary Rock!\nCreate an account</string>
+
+    <string name="username_label">Username:</string>
+    <string name="username_hint">Your username</string>
+
+    <string name="email_label">E-mail:</string>
+    <string name="email_hint">Your E-mail address</string>
+
+    <string name="password_label">Password:</string>
+    <string name="password_hint">Your password</string>
+
+    <string name="retype_password_label">Retype password:</string>
+    <string name="retype_password_hint">Confirm your password</string>
+
+    <string name="sign_up_CTA">Sign up</string>
+
+    <string name="login_instead">I already have an account</string>
+
+    <!-- Log in -->
+    <string name="log_in_text">Log it to meet the rocks!</string>
+
+    <string name="log_in_CTA">Sign up</string>
+
+    <string name="signup_instead">Create an account instead</string>
+
+
+
+</resources>

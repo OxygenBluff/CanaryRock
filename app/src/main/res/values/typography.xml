@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- textAppearance overriding file -->
+    <!-- 1= BASE style, EVERY STYLe inherits this -->
+    <style name="TextAppearance.App" parent="">
+        <item name ="android:fontFamily">@font/app_font_regular</item>
+        <item name="fontFamily">@font/app_font_regular</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- STYLE 1: Extra bold big -->
+    <!-- name = app.header , parent now becomes the textAppearance.App
+    then name fontFamily one with and one without android ns ?
+    then textSize then letterSpacing then lineSpacing multiplier
+     -->
+    <style name="TextAppearance.App.Header" parent="TextAppearance.App">
+        <item name="android:fontFamily">@font/app_font_extrabold</item>
+        <item name="fontFamily">@font/app_font_extrabold</item>
+        <item name="android:textSize">@dimen/text_header</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:lineSpacingMultiplier">0.95</item>
+    </style>
+
+    <!-- Just bold -->
+    <style name="TextAppearance.App.Title" parent="TextAppearance.App">
+        <item name="android:fontFamily">@font/app_font_bold</item>
+        <item name="fontFamily">@font/app_font_bold</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
+    <!-- Regular -->
+    <style name="TextAppearance.App.Body" parent="TextAppearance.App">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <!-- HMM ? slightly spaced out for labels and buttons ans chips ?-->
+    <style name="TextAppearance.App.Label" parent="TextAppearance.App">
+        <item name="android:fontFamily">@font/app_font_bold</item>
+        <item name="fontFamily">@font/app_font_bold</item>
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- small for hints -->
+    <style name="TextAppearance.App.Caption" parent="TextAppearance.App">
+        <item name="android:fontFamily">@font/app_font_medium</item>
+        <item name="fontFamily">@font/app_font_medium</item>
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/text_hint</item>
+    </style>
+
+
+    <!-- SHORTCUTS ?-->
+    <style name="Text.Header" parent="TextAppearance.App.Header" />
+    <style name="Text.Title" parent="TextAppearance.App.Title" />
+    <style name="Text.Body" parent="TextAppearance.App.Body" />
+    <style name="Text.Label" parent="TextAppearance.App.Label" />
+    <style name="Text.Caption" parent="TextAppearance.App.Caption" />
+
+    <!-- JUST to write this: <TextView style=@style/Text.Header"
+    INSTEAD OF this :
+    <TextView android:textAppearance="@style/TextAppearance.App.Header" />
+    -->
+
+</resources>

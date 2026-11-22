@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Oh android XML has this "STATE LIST ANIMATOR"
+    ->Basically animates a VIEW's properties when its state changes (pressed, enabled..)
+    -ATTACH IT IN THE STYLE !
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Press button -> animate shrinking -->
+    <item android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:duration="100"
+                android:propertyName="scaleX"
+                android:valueTo="0.96"
+                android:valueType="floatType"/>
+
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:valueTo="0.96"
+                android:valueType="floatType"
+                android:duration="100"/>
+        </set>
+    </item>
+
+    <!-- else back -->
+    <item>
+        <set>
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:valueTo="1"
+                android:valueType="floatType"
+                android:duration="150"/>
+
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:valueTo="1"
+                android:valueType="floatType"
+                android:duration="150" />
+        </set>
+
+    </item>
+
+</selector>
+
+<!-- OF COURSE you have to hook this somewhere -> Button STYLE -->

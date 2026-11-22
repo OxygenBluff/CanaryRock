@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#f5f5f5</color>
+
+    <!-- Rich Rock -->
+    <color name="bg">#091B43</color>
+
+    <!-- translucent light gray -->
+    <color name="gray_surface">#40000000</color>
+    <color name="gray_surface_selected">#33FFFFFF</color>
+
+    <!--Text ? -->
+    <color name="text_primary">#F2F5FA</color>
+    <color name="text_secondary">#A9B6CE</color>
+    <color name="text_hint">#6F6F76</color>
+
+    <!-- Accentuation ?-->
+    <color name="accentColor">#F6E946</color>
+    <color name="errorColor">#FF7A7A</color>
+
+
+
+</resources>
